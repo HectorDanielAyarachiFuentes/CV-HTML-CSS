@@ -70,18 +70,42 @@ body {
 
 }
 
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
+/* Card estili*/
 .card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
-    margin-top: 20px; /* Mantenemos los márgenes como estaban para espacio entre tarjetas */
-}
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    font-family: "Garamond", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .card h2 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  .card .icon {
+    margin-right: 10px;
+    color: #333333;
+  }
+  
+  .card .photo {
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
 
+  
 .row::after {
     content: "";
     display: table;
@@ -137,3 +161,4 @@ body {
     }
     
 }
+
