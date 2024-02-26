@@ -4,9 +4,9 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    padding: 10px;
+    padding: 0; /* Ajustado a 0 para eliminar el espacio alrededor */
     background: #f1f1f1;
-    margin: 0;
+    margin: 0; /* Aseguramos que no haya margen alrededor del body */
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
 
 .header h1 {
     font-size: 50px;
-    margin: 0;
+    margin: 0; /* Eliminamos el margen para mantener el estilo y evitar espacios adicionales */
 }
 
 .topnav {
@@ -49,6 +49,7 @@ body {
 .rightcolumn {
     float: left;
     width: 75%;
+    /* No se especificó margen originalmente, así que lo dejamos como está */
 }
 
 .cover-img {
@@ -62,7 +63,7 @@ body {
     width: 100%;
     max-width: 150px;
     height: auto;
-    margin-top: -75px; /* Para centrar verticalmente */
+    margin-top: -75px; /* Centrar verticalmente, mantenido */
 }
 
 .fakeimg {
@@ -74,7 +75,7 @@ body {
 .card {
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 20px; /* Mantenemos los márgenes como estaban para espacio entre tarjetas */
 }
 
 .row::after {
@@ -87,19 +88,19 @@ body {
     padding: 20px;
     text-align: center;
     background: #ddd;
-    margin-top: 20px;
+    margin-top: 20px; /* Mantenemos el margen para separar del contenido anterior */
 }
 
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
-        padding: 0;
+        padding: 0; /* Eliminamos el padding lateral para usar todo el ancho */
     }
 }
 
 @media screen and (max-width: 400px) {
     .topnav a {
         float: none;
-        width: 100%;
+        width: 100%; /* Ajuste para que los enlaces ocupen todo el ancho */
     }
 }
