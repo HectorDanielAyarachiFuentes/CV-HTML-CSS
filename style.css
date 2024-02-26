@@ -1,31 +1,26 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     padding: 0; /* Ajustado a 0 para eliminar el espacio alrededor */
     background: #f1f1f1;
     margin: 0; /* Aseguramos que no haya margen alrededor del body */
 }
-
 .header {
     padding: 30px;
     text-align: center;
     background: #4CAF50;
     color: white;
 }
-
 .header h1 {
     font-size: 50px;
     margin: 0; /* Eliminamos el margen para mantener el estilo y evitar espacios adicionales */
 }
-
 .topnav {
     overflow: hidden;
     background-color: #333;
 }
-
 .topnav a {
     float: left;
     display: block;
@@ -34,32 +29,26 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-
 .leftcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
 }
-
 .rightcolumn {
     float: left;
     width: 75%;
     /* No se especificó margen originalmente, así que lo dejamos como está */
 }
-
 .cover-img {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
     border: 5px solid #001f3f; /* O también puedes usar rgb(0, 31, 63) */
-
 }
-
 .profile-img {
     border-radius: 50%;
     width: 100%;
@@ -67,10 +56,8 @@ body {
     height: auto;
     margin-top: -75px; /* Centrar verticalmente, mantenido */
     border: 5px solid #001f3f; /* O también puedes usar rgb(0, 31, 63) */
-
 }
-
-/* Card estili*/
+/* Card estilo inicio*/
 .card {
     background-color: #ffffff;
     padding: 20px;
@@ -104,34 +91,49 @@ body {
     padding: 5px;
   }
   
-
+  .foto {
+    float: left;
+    margin-right: 20px;
+    width: 120px; /* Ajustar según el tamaño deseado */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card {
+    margin-top: 20px; /* Ajustar si se superpone con otros elementos */
+  }
+  
+/* Card estilo fin*/
   
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
-
 .footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
     margin-top: 20px; /* Mantenemos el margen para separar del contenido anterior */
 }
-
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0; /* Eliminamos el padding lateral para usar todo el ancho */
     }
 }
-
 @media screen and (max-width: 400px) {
     .topnav a {
         float: none;
         width: 100%; /* Ajuste para que los enlaces ocupen todo el ancho */
     }
-
     @keyframes changeBorderColor {
         0% {
             border-color: #3498db; /* Azul */
@@ -161,4 +163,3 @@ body {
     }
     
 }
-
