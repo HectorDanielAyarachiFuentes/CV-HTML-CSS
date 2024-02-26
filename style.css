@@ -110,15 +110,22 @@ body {
 
     @keyframes changeBorderColor {
         0% {
-            border-color: white;
+            border-color: #3498db; /* Azul */
+        }
+        25% {
+            border-color: #2ecc71; /* Verde */
         }
         50% {
-            border-color: #ff0000; /* Cambia a rojo a la mitad de la animación, ajusta el color según tus preferencias */
+            border-color: #e74c3c; /* Rojo */
+        }
+        75% {
+            border-color: #f39c12; /* Amarillo anaranjado */
         }
         100% {
-            border-color: white;
+            border-color: #3498db; /* Vuelve al azul al final */
         }
     }
+    
     
     .cover-img {
         width: 100%;
