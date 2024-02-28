@@ -1,26 +1,34 @@
+/* Global styles */
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
-    padding: 0; /* Ajustado a 0 para eliminar el espacio alrededor */
+    padding: 0;
     background: #f1f1f1;
-    margin: 0; /* Aseguramos que no haya margen alrededor del body */
+    margin: 0;
 }
+
+/* Header styles */
 .header {
     padding: 30px;
     text-align: center;
     background: #4CAF50;
     color: white;
 }
+
 .header h1 {
     font-size: 50px;
-    margin: 0; /* Eliminamos el margen para mantener el estilo y evitar espacios adicionales */
+    margin: 0;
 }
+
+/* Navigation styles */
 .topnav {
     overflow: hidden;
     background-color: #333;
 }
+
 .topnav a {
     float: left;
     display: block;
@@ -29,157 +37,148 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+
+/* Column styles */
 .leftcolumn {
     float: left;
     width: 25%;
 }
+
 .rightcolumn {
     float: left;
     width: 75%;
 }
+
+/* Image styles */
 .cover-img {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
-    border: 5px solid #001f3f; /* O también puedes usar rgb(0, 31, 63) */
+    border: 5px solid #001f3f;
 }
+
 .profile-img {
     border-radius: 50%;
     width: 100%;
     max-width: 150px;
     height: auto;
-    margin-top: -75px; /* Centrar verticalmente, mantenido */
-    border: 5px solid #001f3f; /* O también puedes usar rgb(0, 31, 63) */
+    margin-top: -75px;
+    border: 5px solid #001f3f;
 }
-/* Card estilo inicio*/
+
+/* Card styles */
 .card {
     background-color: #ffffff;
     padding: 20px;
-    margin-top: 10px;
+    margin: 10px;
     border: 1px solid #ddd;
     font-family: "Garamond", serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: left;
-    margin: 10px;
-  }
-  
-  .card h2 {
+}
+
+.card h2 {
     font-size: 21px;
     font-weight: bold;
     color: #333333;
-  }
-  
-  .card p {
+}
+
+.card p {
     margin-bottom: 10px;
-  }
-  
-  .card .icon {
+}
+
+.card .icon {
     margin-right: 10px;
     color: #333333;
-  }
-  
-  .card .photo {
+}
+
+.card .photo {
     float: left;
     margin-right: 20px;
     border: 1px solid #ddd;
     padding: 5px;
-  }
-  
-  .foto {
+}
+
+.foto {
     float: left;
     margin-right: 20px;
-    width: 120px; /* Ajustar según el tamaño deseado */
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-  }
-  
-  .foto img {
+}
+
+.foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-/* Card estilo fin*/
-  
+}
+
+/* Responsive design */
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
+
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
-        padding: 0; /* Eliminamos el padding lateral para usar todo el ancho */
+        padding: 0;
     }
 }
+
 @media screen and (max-width: 400px) {
     .topnav a {
         float: none;
-        width: 100%; /* Ajuste para que los enlaces ocupen todo el ancho */
-    }
-    @keyframes changeBorderColor {
-        0% {
-            border-color: #3498db; /* Azul */
-        }
-        25% {
-            border-color: #2ecc71; /* Verde */
-        }
-        50% {
-            border-color: #e74c3c; /* Rojo */
-        }
-        75% {
-            border-color: #f39c12; /* Amarillo anaranjado */
-        }
-        100% {
-            border-color: #3498db; /* Vuelve al azul al final */
-        }
-    }
-    
-    
-    .cover-img {
         width: 100%;
-        height: 100rem; /* Ajusta la altura según sea necesario */
-        object-fit: cover;
-        margin: 0; /* Elimina el margen */
-        border: 5px solid white; /* Inicializa con un borde blanco de 5px */
-        animation: changeBorderColor 5s infinite; /* Cambia de color en 5 segundos, ajusta el tiempo según tus necesidades */
     }
-    
+
+    /* Animation styles */
+    @keyframes changeBorderColor {
+        /* Animation keyframes go here */
+    }
+
+    .cover-img {
+        /* Adjusted styles for smaller screens */
+    }
 }
-/* Card */
-.row .rightcolumn .card{
-    padding-right:16px;
-    padding-top:17px;
-    padding-bottom:19px;
-    margin-left:-2px;
-   }
-   
-   
-/* Footer */
- footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50; /* Cambia el color de fondo a tu preferencia */
-        }
-    
+
+/* Additional styles */
+.row .rightcolumn .card {
+    padding-right: 16px;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    margin-left: -2px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+}
+
 .texto {
     color: aliceblue;
 }
-        .dulce {
-            display: inline-block;
-            max-width: 100%;
-            border-radius: 50%; /* Hace que el div sea circular */
-            overflow: hidden; /* Oculta cualquier contenido que sobresalga del div circular */
-            margin-top: 20px;
-        }
-        .dulce img {
-            width: 100%;
-            height: auto; /* Ajusta la altura automáticamente */
-            border-radius: 50%; /* Hace que la imagen sea circular */
-        }
+
+.dulce {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.dulce img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
